@@ -1,0 +1,192 @@
+/* Start Main */
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url('../fonts/JF-Flat-regular.eot');
+  src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+  url('../fonts/JF-Flat-regular.woff') format('woff'),
+  url('../fonts/JF-Flat-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body {
+  font-family: "JF Flat Regular", Arial, sans-serif !important;
+  background-color: #FAFAFA;
+  color: #333333;
+  padding-top: 50px;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px !important;
+  }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 975px !important;
+  }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px !important;
+  }
+ }
+
+ a {
+   color: inherit;
+   cursor: pointer;
+ }
+
+ #totop {
+   background-color: rgba(83,108,202, 0.7);
+   position: fixed;
+   left: 30px;
+   bottom: 75px;
+   height: 40px;
+   width: 40px;
+   border-radius: 40px;
+   line-height: 40px;
+   cursor: pointer;
+   z-index: 999
+ }
+ #totop:hover {
+   color: #fff;
+ }
+ /* End Main */
+
+/* Start Profile */
+ .profile {
+   background-color: white;
+   box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+   padding: 10px 0;
+   border-radius: 10px;
+   margin-bottom: 20px;
+ }
+
+.profile .close {margin-bottom: 30px}
+
+.profile figure {clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);}
+.profile figure img {
+   border-radius: 52px;
+   width: 100%;
+ }
+
+.profile .title h3 {margin-bottom: 10px}
+.profile .title h5 {margin-top: 0; color: #536CCA;}
+
+.profile ul.info {
+  list-style: none;
+  margin: 25px 0 0 0;
+  padding: 0 15px 0 0;
+  font-size: 14px;
+}
+.profile ul.info li {color: #777777}
+.profile ul.info li p span {color: #333;}
+
+.profile button {background-color: #536CCA; color: white; margin-top: 15px}
+.profile button:hover {color: inherit !important;}
+/* End Profile */
+
+/* Start Nav */
+
+nav {
+  background-color: #fff;
+  box-shadow: 0 0 9px 0 rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 0 !important;
+  overflow: hidden;
+}
+nav .navbar-toggler {
+  margin: 10px;
+}
+
+nav .navbar-nav li {padding: .5rem 10px;}
+nav .navbar-nav li.active, nav .navbar-nav li:hover {background-color: #536CCA;}
+nav .navbar-nav li.active .nav-link, nav .navbar-nav li:hover .nav-link {color: #fff !important}
+nav .navbar-nav li .nav-link {color: inherit !important}
+
+nav .social {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+nav .social li {display: inline;}
+nav .social li {margin-left: 20px}
+nav .social li a {color: #333; text-decoration: none;}
+nav .social li a:hover {color: #536CCA !important;}
+/* End Nav */
+
+/* Start Content */
+.content {
+  background-color: #fff;
+  box-shadow: 0 0 9px 0 rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.content .section {padding: 50px !important;}
+.content .halfBG {background-color: #FAFAFA}
+
+.content .section h3 {margin-bottom: 30px}
+.content .section h3.title::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgba(83,108,202, 0.5);
+  margin-left: -20px;
+  margin-bottom: -5px
+}
+
+.content .part {
+  background-color: #fff;
+  margin: 10px;
+  padding: 30px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 9px 0 rgba(0,0,0,0.1);
+}
+.content .partDBG {background-color: #FAFAFA}
+.content .part h3 {font-size: 3em}
+
+
+
+.gallary .cardBox .card {border-radius: 10px; overflow: hidden; cursor: pointer;}
+/* End Content */
+
+/* Start Footer */
+.footer {
+  margin: 20px;
+  direction: ltr;
+  font-size: 18px;
+}
+.footer a {color: #536CCA !important}
+.footer img {
+  height: 20px;
+  width: 20px;
+}
+/* End Footer */
